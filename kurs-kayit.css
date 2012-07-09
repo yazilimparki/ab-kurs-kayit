@@ -1,0 +1,21 @@
+body {
+  color: #000;
+  background-color: #fff;
+}
+body, input, select {
+  font: 14px Arial, sans-serif;
+}
+.alan {
+  margin-bottom: 10px;
+}
+.alan label {
+  display: block;
+  margin-bottom: 5px;
+}
+.hata {
+  color: #d00;
+}
+.hata li {
+  color: #d00;
+}
+
