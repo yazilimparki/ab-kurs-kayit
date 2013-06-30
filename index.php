@@ -56,7 +56,7 @@ if (!empty($_POST)) {
         mysql_query("INSERT INTO katilimcilar (ad, soyad, unvan, kurum, eposta, telefon, kurs, kayit_tarihi) VALUES ('$ad', '$soyad', '$unvan', '$kurum', '$eposta', '$telefon', '$kurs', NOW())") or vt_hata();
         $id = mysql_insert_id();
 
-        $mesaj = "Sayın $ad soyad,\n\n" .
+        $mesaj = "Sayın $ad $soyad,\n\n" .
             "\"" . $kurslar[$kurs] . "\" kursuna \"$id\" numarası ile kaydınız alınmıştır.\n\n" .
             SITE_AD . "\n" . 
             SITE_ADRES;
